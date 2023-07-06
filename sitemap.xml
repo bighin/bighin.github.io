@@ -2,27 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://bigh.in/contacts/</loc>
+    <loc>https://bighin.github.io/contacts/</loc>
     <lastmod>2023-06-09T18:34:18+02:00</lastmod>
   </url><url>
-    <loc>http://bigh.in/talks/</loc>
+    <loc>https://bighin.github.io/talks/</loc>
     <lastmod>2023-06-09T18:34:00+02:00</lastmod>
   </url><url>
-    <loc>http://bigh.in/publications/</loc>
+    <loc>https://bighin.github.io/publications/</loc>
     <lastmod>2023-06-09T18:33:54+02:00</lastmod>
   </url><url>
-    <loc>http://bigh.in/</loc>
+    <loc>https://bighin.github.io/</loc>
   </url><url>
-    <loc>http://bigh.in/categories/</loc>
+    <loc>https://bighin.github.io/categories/</loc>
   </url><url>
-    <loc>http://bigh.in/categories/css/</loc>
+    <loc>https://bighin.github.io/categories/css/</loc>
   </url><url>
-    <loc>http://bigh.in/categories/javascript/</loc>
+    <loc>https://bighin.github.io/categories/javascript/</loc>
   </url><url>
-    <loc>http://bigh.in/posts/</loc>
+    <loc>https://bighin.github.io/posts/</loc>
   </url><url>
-    <loc>http://bigh.in/tags/</loc>
+    <loc>https://bighin.github.io/tags/</loc>
   </url><url>
-    <loc>http://bigh.in/categories/uncategories/</loc>
+    <loc>https://bighin.github.io/categories/uncategories/</loc>
   </url>
 </urlset>
