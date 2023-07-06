@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Giacomo Bighin</title>
+    <link>http://bigh.in/</link>
+    <description>Recent content on Giacomo Bighin</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>{year}</copyright><atom:link href="http://bigh.in/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Contacts</title>
+      <link>http://bigh.in/contacts/</link>
+      <pubDate>Fri, 09 Jun 2023 18:34:18 +0200</pubDate>
+      
+      <guid>http://bigh.in/contacts/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://bigh.in/talks/</link>
+      <pubDate>Fri, 09 Jun 2023 18:34:00 +0200</pubDate>
+      
+      <guid>http://bigh.in/talks/</guid>
+      <description>Here&amp;rsquo;s a list of recent talks. For most of them the slides are available, as well.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://bigh.in/publications/</link>
+      <pubDate>Fri, 09 Jun 2023 18:33:54 +0200</pubDate>
+      
+      <guid>http://bigh.in/publications/</guid>
+      <description>Publications and preprints A. G. Volosniev, G. Bighin, L. Santos, L. A Peńa Ardila, &amp;ldquo;Non-equilibrium dynamics of dipolar polarons &amp;ldquo;, under review.</description>
+    </item>
+    
+  </channel>
+</rss>
