@@ -6,6 +6,7 @@
     <description>Recent content in Post on Giacomo Bighin</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>{year}</copyright><atom:link href="https://bighin.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>{year}</copyright>
+    <atom:link href="https://bighin.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
