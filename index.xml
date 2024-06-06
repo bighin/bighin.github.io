@@ -4,9 +4,10 @@
     <title>Giacomo Bighin</title>
     <link>https://bighin.github.io/</link>
     <description>Recent content on Giacomo Bighin</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>{year}</copyright>
+    <lastBuildDate>Fri, 09 Jun 2023 18:34:18 +0200</lastBuildDate>
     <atom:link href="https://bighin.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Contacts</title>
@@ -27,7 +28,7 @@
       <link>https://bighin.github.io/publications/</link>
       <pubDate>Fri, 09 Jun 2023 18:33:54 +0200</pubDate>
       <guid>https://bighin.github.io/publications/</guid>
-      <description>Publications and preprints M. Lanaro, G. Bighin, L. Dell&amp;rsquo;Anna, L. Salasnich, &amp;ldquo;Finite-size effects in the two-dimensional BCS-BEC crossover&amp;rdquo;, to appear in Phys.</description>
+      <description>Publications and preprints A. Cappellaro, G. Bighin, I. Cherepanov, and M. Lemeshko, &amp;ldquo;Environment-limited transfer of angular momentum in Bose liquids&amp;rdquo;, in preparation.</description>
     </item>
   </channel>
 </rss>

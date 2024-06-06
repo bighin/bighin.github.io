@@ -4,9 +4,10 @@
     <title>Post on Giacomo Bighin</title>
     <link>https://bighin.github.io/posts/</link>
     <description>Recent content in Post on Giacomo Bighin</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>{year}</copyright>
+    <lastBuildDate></lastBuildDate>
     <atom:link href="https://bighin.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
