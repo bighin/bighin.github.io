@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Giacomo Bighin</title>
-    <link>https://bighin.github.io/categories/</link>
+    <link>https://bigh.in/categories/</link>
     <description>Recent content in Categories on Giacomo Bighin</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>{year}</copyright>
-    <atom:link href="https://bighin.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://bigh.in/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>CSS</title>
-      <link>https://bighin.github.io/categories/css/</link>
+      <link>https://bigh.in/categories/css/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://bighin.github.io/categories/css/</guid>
+      <guid>https://bigh.in/categories/css/</guid>
       <description></description>
     </item>
     <item>
       <title>JavaScript</title>
-      <link>https://bighin.github.io/categories/javascript/</link>
+      <link>https://bigh.in/categories/javascript/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://bighin.github.io/categories/javascript/</guid>
+      <guid>https://bigh.in/categories/javascript/</guid>
       <description>&lt;p&gt;Description&lt;/p&gt;</description>
     </item>
     <item>
       <title>Uncategories</title>
-      <link>https://bighin.github.io/categories/uncategories/</link>
+      <link>https://bigh.in/categories/uncategories/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://bighin.github.io/categories/uncategories/</guid>
+      <guid>https://bigh.in/categories/uncategories/</guid>
       <description>&lt;p&gt;Description&lt;/p&gt;</description>
     </item>
   </channel>

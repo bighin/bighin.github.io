@@ -2,32 +2,32 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Giacomo Bighin</title>
-    <link>https://bighin.github.io/</link>
+    <link>https://bigh.in/</link>
     <description>Recent content on Giacomo Bighin</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>{year}</copyright>
     <lastBuildDate>Fri, 09 Jun 2023 18:34:18 +0200</lastBuildDate>
-    <atom:link href="https://bighin.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://bigh.in/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Contacts</title>
-      <link>https://bighin.github.io/contacts/</link>
+      <link>https://bigh.in/contacts/</link>
       <pubDate>Fri, 09 Jun 2023 18:34:18 +0200</pubDate>
-      <guid>https://bighin.github.io/contacts/</guid>
-      <description>&lt;div style=&#34;display: flex; align-items: flex-start; gap: 20px;&#34;&gt;&#xA;  &lt;div style=&#34;flex: 1;&#34;&gt;&#xA;Office 316&lt;br/&gt;&#xA;Department of Physics&lt;br/&gt;&#xA;Faculty of Science&lt;br/&gt;&#xA;University of Zagreb&lt;br/&gt;&#xA;Bijenička cesta 32&lt;br/&gt;&#xA;10000 Zagreb, Croatia&lt;br/&gt;&#xA;  &lt;/div&gt;&#xA;  &lt;div&gt;&#xA;    &lt;img src=&#34;https://bighin.github.io/office.png&#34; alt=&#34;My office&#34; style=&#34;max-width: 300px; height: auto;&#34;&gt;&#xA;  &lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&lt;br/&gt;&#xA;&lt;p&gt;You can find me on &lt;a href=&#34;https://www.linkedin.com/in/bighin/&#34;&gt;LinkedIn&lt;/a&gt;, on &lt;a href=&#34;https://github.com/bighin&#34;&gt;GitHub&lt;/a&gt;, or you can &lt;a href=&#34;mailto:bighin@gmail.com&#34;&gt;write me an email&lt;/a&gt;.&lt;/p&gt;</description>
+      <guid>https://bigh.in/contacts/</guid>
+      <description>&lt;div style=&#34;display: flex; align-items: flex-start; gap: 20px;&#34;&gt;&#xA;  &lt;div style=&#34;flex: 1;&#34;&gt;&#xA;Office 316&lt;br/&gt;&#xA;Department of Physics&lt;br/&gt;&#xA;Faculty of Science&lt;br/&gt;&#xA;University of Zagreb&lt;br/&gt;&#xA;Bijenička cesta 32&lt;br/&gt;&#xA;10000 Zagreb, Croatia&lt;br/&gt;&#xA;  &lt;/div&gt;&#xA;  &lt;div&gt;&#xA;    &lt;img src=&#34;https://bigh.in/office.png&#34; alt=&#34;My office&#34; style=&#34;max-width: 300px; height: auto;&#34;&gt;&#xA;  &lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&lt;br/&gt;&#xA;&lt;p&gt;You can find me on &lt;a href=&#34;https://www.linkedin.com/in/bighin/&#34;&gt;LinkedIn&lt;/a&gt;, on &lt;a href=&#34;https://github.com/bighin&#34;&gt;GitHub&lt;/a&gt;, or you can &lt;a href=&#34;mailto:bighin@gmail.com&#34;&gt;write me an email&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     <item>
       <title></title>
-      <link>https://bighin.github.io/talks/</link>
+      <link>https://bigh.in/talks/</link>
       <pubDate>Fri, 09 Jun 2023 18:34:00 +0200</pubDate>
-      <guid>https://bighin.github.io/talks/</guid>
+      <guid>https://bigh.in/talks/</guid>
       <description>&lt;p&gt;Here&amp;rsquo;s a list of recent talks. For most of them the slides are available, as well.&lt;/p&gt;</description>
     </item>
     <item>
       <title></title>
-      <link>https://bighin.github.io/publications/</link>
+      <link>https://bigh.in/publications/</link>
       <pubDate>Fri, 09 Jun 2023 18:33:54 +0200</pubDate>
-      <guid>https://bighin.github.io/publications/</guid>
+      <guid>https://bigh.in/publications/</guid>
       <description>&lt;h3 id=&#34;publications-and-preprints&#34;&gt;Publications and preprints&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;A. Cappellaro, G. Bighin, I. Cherepanov, and M. Lemeshko, &lt;em&gt;&amp;ldquo;Environment-limited transfer of angular momentum in Bose liquids&amp;rdquo;&lt;/em&gt;, J. Chem. Phys. &lt;strong&gt;162&lt;/strong&gt;, 074104 (2025).  &lt;a href=&#34;https://arxiv.org/abs/2501.16066&#34;&gt;🔗&lt;/a&gt;&lt;/p&gt;</description>
     </item>
   </channel>
