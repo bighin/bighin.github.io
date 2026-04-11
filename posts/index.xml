@@ -7,7 +7,6 @@
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>{year}</copyright>
-    <lastBuildDate></lastBuildDate>
     <atom:link href="https://bigh.in/posts/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

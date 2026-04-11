@@ -5,7 +5,7 @@
     <loc>https://bigh.in/</loc>
     <lastmod>2023-06-09T18:34:18+02:00</lastmod>
   </url><url>
-    <loc>https://bigh.in/contacts/</loc>
+    <loc>https://bigh.in/contact/</loc>
     <lastmod>2023-06-09T18:34:18+02:00</lastmod>
   </url><url>
     <loc>https://bigh.in/talks/</loc>
@@ -14,14 +14,13 @@
     <loc>https://bigh.in/publications/</loc>
     <lastmod>2023-06-09T18:33:54+02:00</lastmod>
   </url><url>
-    <loc>https://bigh.in/posts/</loc>
-    <lastmod>2022-08-27T09:16:45+00:00</lastmod>
-  </url><url>
     <loc>https://bigh.in/categories/</loc>
   </url><url>
     <loc>https://bigh.in/categories/css/</loc>
   </url><url>
     <loc>https://bigh.in/categories/javascript/</loc>
+  </url><url>
+    <loc>https://bigh.in/posts/</loc>
   </url><url>
     <loc>https://bigh.in/tags/</loc>
   </url><url>
