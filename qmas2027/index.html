@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Quantum Matter Across Scales: Nonlinear Dynamics, Correlations, and Emergent Phenomena</title>
+<meta name="description" content="Workshop, 24–26 May 2027, Department of Physics and Astronomy “Galileo Galilei”, University of Padova.">
+<meta name="theme-color" content="#0f7f93">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' x2='1'%3E%3Cstop offset='0' stop-color='%2319b8b0'/%3E%3Cstop offset='1' stop-color='%23062a45'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='32' height='32' rx='7' fill='url(%23g)'/%3E%3Ctext x='16' y='22' font-family='Arial' font-weight='700' font-size='15' fill='white' text-anchor='middle'%3EQM%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@500;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f2f7f7; --surface:#ffffff; --ink:#0b2c3d; --muted:#557180; --rule:#d5e4e6; --soft:#e6f1f2;
+  --accent:#0e8f8c; --break:#f2f7f7; --accent-ink:#0a6f6d; --head:#063247;
+  --g1:#19b8b0; --g2:#0f7f93; --g3:#0a4a6b; --g4:#062a45;
+  --display:Manrope,"Inter",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --text:Inter,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  box-sizing:border-box;
+  padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){ --bg:#0a1a22; --surface:#0e222c; --ink:#dcebef; --muted:#8fabb6; --rule:#1f3a46; --soft:#123040; --accent:#3fd0c6; --break:#0b1d26; --accent-ink:#5fdcd3; --head:#e8f5f6; }
+}
+:root[data-theme="dark"]{ --bg:#0a1a22; --surface:#0e222c; --ink:#dcebef; --muted:#8fabb6; --rule:#1f3a46; --soft:#123040; --accent:#3fd0c6; --break:#0b1d26; --accent-ink:#5fdcd3; --head:#e8f5f6; }
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--text);font-size:1.0625rem;line-height:1.65;-webkit-font-smoothing:antialiased}
+a{color:var(--accent-ink);text-decoration-thickness:1px;text-underline-offset:.2em}
+a:hover{text-decoration-thickness:2px}
+a:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:2px}
+.skip{position:absolute;left:-999px;top:0}
+.skip:focus{left:1rem;top:1rem;z-index:10;background:var(--surface);padding:.5rem 1rem}
+.wrap{max-width:74rem;margin:0 auto;padding:0 clamp(1.25rem,4vw,2.5rem)}
+
+/* ---------- Top bar ---------- */
+.topbar{position:sticky;top:0;z-index:5;background:linear-gradient(100deg,var(--g1) 0%,var(--g2) 35%,var(--g3) 70%,var(--g4) 100%);padding-top:env(safe-area-inset-top,0px);box-shadow:0 1px 0 rgba(0,0,0,.08)}
+.topnav.wrap{max-width:78rem}
+.topnav ul{list-style:none;margin:0;padding:0;display:flex;gap:.25rem 1.75rem;overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+.topnav ul::-webkit-scrollbar{display:none}
+.topnav li{flex:none}
+.topnav a{display:block;padding:1.35rem 0 1.25rem;color:rgba(255,255,255,.86);text-decoration:none;font-size:1rem;font-weight:500;white-space:nowrap;border-bottom:3px solid transparent}
+.topnav a:hover{color:#fff}
+.topnav a[aria-current="page"]{color:#fff;font-weight:700;border-bottom-color:rgba(255,255,255,.9)}
+.topnav a:focus-visible{outline-color:#fff;outline-offset:-3px}
+
+/* ---------- Header ---------- */
+.hero{background:var(--surface);border-bottom:1px solid var(--rule)}
+.hero .wrap{padding-top:3.25rem;padding-bottom:2.75rem}
+.eyebrow{margin:0 0 .9rem;font-size:.95rem;font-weight:600;color:var(--accent-ink);letter-spacing:.01em}
+h1{margin:0;font-family:var(--display);font-weight:800;color:var(--head);font-size:clamp(2.1rem,4.6vw,3.4rem);line-height:1.08;letter-spacing:-.025em;max-width:22ch}
+.subtitle{margin:.5rem 0 0;font-family:var(--display);font-weight:500;color:var(--head);font-size:clamp(1.15rem,2.1vw,1.55rem);line-height:1.3;letter-spacing:-.01em;text-wrap:balance}
+@media (min-width:52rem){ .subtitle{white-space:nowrap} }
+.place{margin:1.25rem 0 0;color:var(--muted);font-size:1.05rem}
+
+/* ---------- Content ---------- */
+main.wrap{padding-top:3.25rem;padding-bottom:4rem}
+section[hidden]{display:none}
+h2{font-family:var(--display);font-weight:800;color:var(--head);font-size:clamp(1.8rem,3.2vw,2.3rem);line-height:1.15;letter-spacing:-.02em;margin:0 0 1.5rem}
+h3{font-family:var(--display);font-weight:700;color:var(--head);font-size:1.3rem;line-height:1.3;letter-spacing:-.01em;margin:2.5rem 0 .6rem}
+p{margin:0 0 1.1rem;max-width:44rem}
+.note{color:var(--muted);font-style:italic}
+strong{font-weight:650;color:var(--head)}
+
+.rows{list-style:none;margin:1.75rem 0 0;padding:0;background:var(--surface);border:1px solid var(--rule);border-radius:10px;max-width:44rem}
+.rows li{display:grid;grid-template-columns:11rem 1fr;gap:.2rem 1.5rem;padding:.95rem 1.25rem;border-top:1px solid var(--rule);margin:0}
+.rows li:first-child{border-top:0}
+.rows .k{color:var(--muted);font-size:.92rem;font-weight:500;padding-top:.1rem}
+.rows .v{font-weight:500}
+.rows .v em{display:block;color:var(--muted);font-style:normal;font-weight:400}
+
+.actions{display:flex;flex-wrap:wrap;align-items:center;gap:.75rem 1.5rem;margin:2rem 0 0}
+.btn{display:inline-block;padding:.75rem 1.4rem;border-radius:999px;background:var(--accent);color:#fff;text-decoration:none;font-weight:600}
+.btn:hover{background:var(--accent-ink)}
+@media (prefers-color-scheme: dark){ :root:not([data-theme="light"]) .btn{color:#062a33} }
+:root[data-theme="dark"] .btn{color:#062a33}
+.actions a:not(.btn){font-weight:500}
+
+.plain{padding-left:0;list-style:none;margin:0}
+.people{background:var(--surface);border:1px solid var(--rule);border-radius:10px;max-width:44rem}
+.people li{padding:.9rem 1.25rem;border-top:1px solid var(--rule);margin:0;font-weight:600;color:var(--head)}
+.people li:first-child{border-top:0}
+.people small{display:block;color:var(--muted);font-size:.92rem;font-weight:400;margin-top:.1rem}
+.speakers{max-width:none;display:grid;grid-template-columns:repeat(auto-fill,minmax(19rem,1fr));border:0;background:none;gap:.75rem}
+.speakers li,.speakers li:first-child{background:var(--surface);border:1px solid var(--rule);border-radius:10px}
+.tbc{font-size:.75rem;font-weight:600;color:var(--accent-ink);background:var(--soft);border-radius:999px;padding:.1rem .55rem;margin-left:.4rem;vertical-align:.1em;white-space:nowrap}
+
+.day{display:flex;align-items:baseline;gap:.6rem;font-size:1.35rem;margin:2.75rem 0 .9rem}
+.day:first-of-type{margin-top:1.75rem}
+.day .dn{font-size:1.35rem;font-weight:800;color:var(--accent-ink)}
+.day .dw{font-family:var(--text);font-size:.95rem;font-weight:500;color:var(--muted)}
+.tbl{border:1px solid var(--rule);border-radius:10px;overflow:hidden;overflow-x:auto;background:var(--surface);max-width:44rem}
+table.sched{width:100%;border-collapse:collapse}
+.sched thead th{font-size:.85rem;font-weight:600;text-align:left;color:#fff;background:linear-gradient(100deg,var(--g2),var(--g4));padding:.65rem 1.1rem}
+.sched tbody th,.sched td{padding:.8rem 1.1rem;border-top:1px solid var(--rule);vertical-align:top;text-align:left}
+.sched tbody tr:first-child th,.sched tbody tr:first-child td{border-top:0}
+.sched tbody th{width:6rem;font-weight:600;font-variant-numeric:tabular-nums;white-space:nowrap;border-right:1px solid var(--rule);color:var(--head)}
+.sched td{font-weight:500}
+.sched .what{display:block;color:var(--muted);font-weight:400}
+.sched tr.break th,.sched tr.break td{color:var(--muted);font-weight:400;background:var(--break)}
+
+.steps{margin:0 0 1.1rem;padding-left:1.25rem;max-width:44rem}
+.steps li{margin-bottom:.5rem;padding-left:.25rem}
+.steps li::marker{color:var(--accent)}
+.warn{padding:1rem 1.25rem;background:var(--soft);border-left:3px solid var(--accent);border-radius:0 8px 8px 0}
+.photo{margin:0 0 2.75rem}
+.photo img{display:block;width:100%;height:auto;border-radius:14px;box-shadow:0 10px 30px -12px rgba(6,42,69,.35)}
+.photo figcaption{font-size:.88rem;color:var(--muted);margin-top:.7rem}
+@media (max-width:40rem){ .photo img{border-radius:10px} }
+.logos{display:flex;flex-wrap:wrap;align-items:center;gap:1.25rem;margin:2rem 0 0}
+.logos img{display:block;height:5.5rem;width:auto;max-width:100%;background:#fff;padding:1.1rem 1.4rem;box-sizing:content-box;border:1px solid var(--rule);border-radius:10px}
+.home-logos{display:flex;flex-wrap:wrap;align-items:center;gap:1.5rem 2.5rem;margin:3rem 0 0;padding:1.5rem 0 0;border-top:1px solid var(--rule)}
+.home-logos img{display:block;height:3.6rem;width:auto;background:#fff;padding:.6rem .8rem;box-sizing:content-box;border-radius:8px}
+.contact{margin-top:1.75rem}
+.day-venue{margin:-.5rem 0 .9rem;color:var(--muted);font-size:.95rem;font-weight:500}
+.venues .v a.maplink{display:inline-block;margin-top:.3rem;font-size:.95rem}
+.day-venue .addr{display:block;font-weight:400;font-size:.9rem;opacity:.85}
+.boa+.boa{margin-top:-1rem}
+.boa{display:flex;align-items:center;gap:1rem;max-width:44rem;margin:0 0 1.75rem;padding:1rem 1.25rem;border:1px solid var(--rule);text-decoration:none;color:inherit;background:var(--surface);border-radius:10px;transition:border-color .15s,box-shadow .15s}
+.boa:hover{border-color:var(--accent);box-shadow:0 4px 18px -10px rgba(0,0,0,.35)}
+.boa-icon{flex:none;width:2.1rem;height:2.1rem;color:var(--accent)}
+.boa-text{flex:1;min-width:0}
+.boa-title{display:block;font-weight:600;color:var(--head)}
+.boa-meta{display:block;color:var(--muted);font-size:.9rem;}
+.boa-arrow{flex:none;color:var(--accent);font-size:1.3rem;transition:transform .15s}
+.boa:hover .boa-arrow{transform:translateX(3px)}
+@media (max-width:40rem){ .logos img{height:4.25rem;padding:.9rem 1rem} }
+.map{margin:1.75rem 0 .5rem;border:1px solid var(--rule);border-radius:10px;overflow:hidden;background:var(--soft);aspect-ratio:16/9;max-width:44rem}
+.map iframe{display:block;width:100%;height:100%;border:0}
+
+footer{border-top:1px solid var(--rule);background:var(--surface);color:var(--muted);font-size:.9rem}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:.5rem 2rem;padding-top:1.25rem;padding-bottom:1.5rem}
+footer a{color:inherit}
+
+@media (max-width:40rem){
+  .topnav a{padding:1.05rem 0 .95rem;font-size:.95rem}
+  .topnav ul{gap:0 1.4rem;-webkit-mask-image:linear-gradient(90deg,#000 88%,transparent);mask-image:linear-gradient(90deg,#000 88%,transparent);padding-right:2rem}
+  .hero .wrap{padding-top:2.25rem;padding-bottom:2rem}
+  .rows li{grid-template-columns:1fr}
+  .sched tbody th{width:4.25rem;padding-right:.7rem}
+  .sched tbody th,.sched td{padding-left:.8rem}
+}
+@media (prefers-reduced-motion:no-preference){
+  section:not([hidden]){animation:fade .3s ease-out}
+  @keyframes fade{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:none}}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#content">Skip to content</a>
+<header class="topbar">
+  <nav class="topnav wrap" aria-label="Main">
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#speakers">Invited Speakers</a></li>
+      <li><a href="#registration">Registration</a></li>
+      <li><a href="#programme">Programme</a></li>
+      <li><a href="#venue">Venue</a></li>
+      <li><a href="#organizers">Organizers</a></li>
+      <li><a href="#sponsors">Sponsorship</a></li>
+    </ul>
+  </nav>
+</header>
+<div class="hero">
+  <div class="wrap">
+    <p class="eyebrow">Workshop, 24&ndash;26 May 2027</p>
+    <h1>Quantum Matter Across Scales</h1>
+    <p class="subtitle">Nonlinear Dynamics, Correlations, and Emergent Phenomena</p>
+    <p class="place">Universit&agrave; di Padova, Italy</p>
+  </div>
+</div>
+<main id="content" class="wrap">
+
+<section id="page-home">
+  <figure class="photo">
+    <picture>
+      <source srcset="images/padova-prato-della-valle.webp?v=7" type="image/webp">
+      <img src="images/padova-prato-della-valle.jpg?v=7" width="1160" height="547" alt="Prato della Valle in Padova in the evening light, with its statues reflected in the canal and the Basilica of Santa Giustina behind" decoding="async" fetchpriority="high">
+    </picture>
+    <figcaption>Prato della Valle and the Basilica of Santa Giustina, Padova</figcaption>
+  </figure>
+  <h2>Welcome</h2>
+  <p>Three days in Padova celebrating the scientific work of Prof. Luca Salasnich on the occasion of his 60th birthday, from the physics of ultracold gases to nonlinear phenomena and quantum chaos.</p>
+  <p>Throughout his career, Luca has brought together ideas from condensed matter physics, statistical mechanics, nonlinear science and mathematical physics, showing how methods developed in one field can shed light on another.</p>
+  <p>This workshop celebrates that body of work. It gathers long-standing collaborators, former students and leading researchers from around the world, whose interests meet Luca&rsquo;s research in its many directions. Over three days of talks, participants will discuss recent results and open problems in these fields.</p>
+  <p>The workshop will take place from Monday 24 to Wednesday 26 May 2027 at the University of Padova, Italy.</p>
+  <ul class="rows">
+    <li><span class="k">Workshop</span><span class="v">24&ndash;26 May 2027</span></li>
+    <li><span class="k">Venue</span><span class="v">University of Padova<em><a href="#venue">See venues and directions</a></em></span></li>
+    <li><span class="k">Abstract deadline</span><span class="v">14 April 2027</span></li>
+    <li><span class="k">Registration</span><span class="v">Free, but required<em>Deadline: 14 April 2027</em></span></li>
+  </ul>
+  <div class="actions">
+    <a class="btn" href="#registration">Register</a>
+    <a id="ics" href="#home" download="quantum-matter-across-scales-2027.ics">Add to calendar</a>
+  </div>
+  <div class="home-logos" aria-label="Supported by">
+    <img src="images/unipd-logo.png" alt="Universit&agrave; di Padova" loading="lazy">
+    <img src="images/infn-logo.png" alt="INFN, Istituto Nazionale di Fisica Nucleare" loading="lazy">
+  </div>
+  <p class="contact">For any question, feel free to <a class="js-contact" href="#organizers">contact the organizers</a>.</p>
+</section>
+
+<section id="page-speakers" hidden>
+  <h2>Invited Speakers</h2>
+  <ul class="plain people speakers">
+    <li>Alberto Ambrosetti <small>University of Padova, Italy</small></li>
+    <li>Francesco Ancilotto <small>University of Padova, Italy</small></li>
+    <li>Andrea Bardin <small>University of Padova, Italy</small></li>
+    <li>Alessia Burchianti <small>CNR-INO and LENS, Florence, Italy</small></li>
+    <li>Fabio Cinti <small>University of Florence, Italy</small></li>
+    <li>Roberta Citro <small>University of Salerno, Italy</small></li>
+    <li>Lorenzo Frigato <small>University of Padova, Italy</small></li>
+    <li>Stefano Giorgini <small>University of Trento, Italy</small></li>
+    <li>Francesco Lorenzi <small>University of Padova, Italy</small></li>
+    <li>Boris Malomed <small>Tel Aviv University, Israel</small></li>
+    <li>Nicola Manini <small>University of Milan, Italy</small></li>
+    <li>Pieralberto Marchetti <small>University of Padova, Italy</small></li>
+    <li>Francesco Minardi <small>University of Bologna, Italy</small></li>
+    <li>Anna Minguzzi <small>CNRS and Université Grenoble Alpes, France</small></li>
+    <li>Roberto Onofrio <small>Dartmouth College, USA</small></li>
+    <li>Alberto Parola <small>University of Insubria, Como, Italy</small></li>
+    <li>Maria Pelizzo <small>University of Padova, Italy</small></li>
+    <li>Vittorio Penna <small>Politecnico di Torino, Italy</small></li>
+    <li>Luciano Reatto <small>University of Milan, Italy</small></li>
+    <li>Marko Robnik <small>CAMTP, University of Maribor, Slovenia</small></li>
+    <li>Fabio Sattin <small>Consorzio RFX, Padova, Italy</small></li>
+    <li>Pierluigi Silvestrelli <small>University of Padova, Italy</small></li>
+    <li>Jacques Tempere <small>University of Antwerp, Belgium</small></li>
+    <li>Flavio Toigo <small>University of Padova, Italy</small></li>
+    <li>Andrea Trombettoni <small>University of Trieste, Italy</small></li>
+    <li>Cesare Vianello <small>University of Padova, Italy</small></li>
+    <li>Sandro Wimberger <small>University of Parma, Italy</small></li>
+  </ul>
+</section>
+
+<section id="page-registration" hidden>
+  <h2>Registration</h2>
+  <p class="lede">Participation is free. There is no registration fee.</p>
+  <p>Places are limited, so we kindly ask all participants to register in advance. This helps us organise the workshop.</p>
+  <p>Registrations are open until <strong>14 April 2027</strong>.</p>
+  <div class="actions">
+    <a class="btn" href="https://docs.google.com/forms/d/e/1FAIpQLSctIp_VGzEnqN8ydSLXRT3HEutYCp_JqMFc9j8npTKWOb3YYA/viewform?usp=dialog" target="_blank" rel="noopener">Open the registration form</a>
+  </div>
+</section>
+
+<section id="page-programme" hidden>
+  <h2>Programme</h2>
+  <a class="boa" href="book-of-abstracts.pdf" target="_blank" rel="noopener">
+    <svg class="boa-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 2.75h8.2L19.25 7.8V20a1.25 1.25 0 0 1-1.25 1.25H6A1.25 1.25 0 0 1 4.75 20V4A1.25 1.25 0 0 1 6 2.75Z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M14 2.9V8h5.1M8 12.5h8M8 15.5h8M8 18.5h5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+    <span class="boa-text"><span class="boa-title">Book of abstracts</span><span class="boa-meta">PDF</span></span>
+    <span class="boa-arrow" aria-hidden="true">&rarr;</span>
+  </a>
+  <a class="boa" href="qmas2027-flyer.pdf" target="_blank" rel="noopener">
+    <svg class="boa-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="4.75" y="2.75" width="14.5" height="18.5" rx="1.5" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M4.75 9.5h14.5M8 13h8M8 16h5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+    <span class="boa-text"><span class="boa-title">Flyer</span><span class="boa-meta">PDF</span></span>
+    <span class="boa-arrow" aria-hidden="true">&rarr;</span>
+  </a>
+  <h3 class="day"><span class="dn">24</span><span>May<span class="dw">&ensp;Monday</span></span></h3>
+  <p class="day-venue">Department of Physics and Astronomy<span class="addr">Via Marzolo 8, Padova</span></p>
+  <div class="tbl"><table class="sched">
+    <thead><tr><th scope="col">Time</th><th scope="col">Session</th></tr></thead>
+    <tbody>
+      <tr class="break"><th scope="row">09:00</th><td>Registration</td></tr>
+      <tr class="session"><th scope="row">09:50</th><td>Opening</td></tr>
+      <tr class="talk"><th scope="row">10:00</th><td>Invited talk</td></tr>
+      <tr class="talk"><th scope="row">10:30</th><td>Invited talk</td></tr>
+      <tr class="break"><th scope="row">11:00</th><td>Coffee break</td></tr>
+      <tr class="talk"><th scope="row">11:30</th><td>Invited talk</td></tr>
+      <tr class="talk"><th scope="row">12:00</th><td>Invited talk</td></tr>
+      <tr class="talk"><th scope="row">12:30</th><td>Invited talk</td></tr>
+      <tr class="break"><th scope="row">13:00</th><td>Lunch</td></tr>
+      <tr class="talk"><th scope="row">14:30</th><td>Invited talk</td></tr>
+      <tr class="talk"><th scope="row">15:00</th><td>Invited talk</td></tr>
+      <tr class="break"><th scope="row">15:30</th><td>Coffee break</td></tr>
+      <tr class="talk"><th scope="row">16:00</th><td>Invited talk</td></tr>
+      <tr class="talk"><th scope="row">16:30</th><td>Invited talk</td></tr>
+    </tbody>
+  </table></div>
+  <h3 class="day"><span class="dn">25</span><span>May<span class="dw">&ensp;Tuesday</span></span></h3>
+  <p class="day-venue">Aula Magna, Department of Chemical Sciences<span class="addr">Via Marzolo 1, Padova</span></p>
+  <div class="tbl"><table class="sched">
+    <thead><tr><th scope="col">Time</th><th scope="col">Session</th></tr></thead>
+    <tbody>
+      <tr class="talk"><th scope="row">09:30</th><td>Invited talk</td></tr>
+      <tr class="talk"><th scope="row">10:00</th><td>Invited talk</td></tr>
+      <tr class="talk"><th scope="row">10:30</th><td>Invited talk</td></tr>
+      <tr class="break"><th scope="row">11:00</th><td>Coffee break</td></tr>
+      <tr class="talk"><th scope="row">11:30</th><td>Invited talk</td></tr>
+      <tr class="talk"><th scope="row">12:00</th><td>Invited talk</td></tr>
+      <tr class="talk"><th scope="row">12:30</th><td>Invited talk</td></tr>
+      <tr class="break"><th scope="row">13:00</th><td>Lunch</td></tr>
+      <tr class="talk"><th scope="row">14:30</th><td>Invited talk</td></tr>
+      <tr class="talk"><th scope="row">15:00</th><td>Invited talk</td></tr>
+      <tr class="talk"><th scope="row">15:30</th><td>Invited talk</td></tr>
+      <tr class="break"><th scope="row">16:00</th><td>Coffee break (until 18:00)</td></tr>
+      <tr class="session"><th scope="row">20:30</th><td>Social dinner</td></tr>
+    </tbody>
+  </table></div>
+  <h3 class="day"><span class="dn">26</span><span>May<span class="dw">&ensp;Wednesday</span></span></h3>
+  <p class="day-venue">Archivio Antico, Palazzo del Bo<span class="addr">Via VIII Febbraio 2, Padova</span></p>
+  <div class="tbl"><table class="sched">
+    <thead><tr><th scope="col">Time</th><th scope="col">Session</th></tr></thead>
+    <tbody>
+      <tr class="talk"><th scope="row">10:00</th><td>Invited talk</td></tr>
+      <tr class="talk"><th scope="row">10:30</th><td>Invited talk</td></tr>
+      <tr class="break"><th scope="row">11:00</th><td>Coffee break</td></tr>
+      <tr class="talk"><th scope="row">11:30</th><td>Invited talk</td></tr>
+      <tr class="talk"><th scope="row">12:00</th><td>Invited talk</td></tr>
+      <tr class="talk"><th scope="row">12:30</th><td>Invited talk</td></tr>
+      <tr class="break"><th scope="row">13:00</th><td>Lunch</td></tr>
+      <tr class="talk"><th scope="row">14:30</th><td>Invited talk</td></tr>
+      <tr class="talk"><th scope="row">15:00</th><td>Invited talk</td></tr>
+      <tr class="break"><th scope="row">15:30</th><td>Coffee break</td></tr>
+      <tr class="talk"><th scope="row">16:00</th><td>Invited talk</td></tr>
+      <tr class="talk"><th scope="row">16:30</th><td>Invited talk</td></tr>
+      <tr class="session"><th scope="row">17:00</th><td>Closing</td></tr>
+    </tbody>
+  </table></div>
+</section>
+
+<section id="page-venue" hidden>
+  <h2>Venue</h2>
+  <p class="lede">The workshop takes place in three different venues of the University of Padova, one for each day.</p>
+  <ul class="rows venues">
+    <li><span class="k">Monday 24 May</span><span class="v">Department of Physics and Astronomy &ldquo;Galileo Galilei&rdquo;<em>Aula Rostagni or Aula B (to be confirmed), Via Marzolo 8</em><a class="maplink" href="https://www.google.com/maps/search/?api=1&amp;query=Dipartimento+di+Fisica+e+Astronomia%2C+Via+Marzolo+8%2C+35131+Padova" target="_blank" rel="noopener">Open in Google Maps</a></span></li>
+    <li><span class="k">Tuesday 25 May</span><span class="v">Aula Magna, Department of Chemical Sciences<em>Via Marzolo 1, a short walk from the Department of Physics</em><a class="maplink" href="https://www.google.com/maps/search/?api=1&amp;query=Dipartimento+di+Scienze+Chimiche%2C+Via+Marzolo+1%2C+35131+Padova" target="_blank" rel="noopener">Open in Google Maps</a></span></li>
+    <li><span class="k">Wednesday 26 May</span><span class="v">Archivio Antico, Palazzo del Bo<em>Via VIII Febbraio 2, in the historic centre</em><a class="maplink" href="https://www.google.com/maps/search/?api=1&amp;query=Palazzo+del+Bo%2C+Via+VIII+Febbraio+2%2C+35122+Padova" target="_blank" rel="noopener">Open in Google Maps</a></span></li>
+  </ul>
+  <h3>By train</h3>
+  <p>Padova lies on both the Venice&ndash;Milan&ndash;Turin and the Venice&ndash;Bologna&ndash;Rome railway lines, with frequent connections. Timetables are available on the <a href="https://www.trenitalia.com/en.html" target="_blank" rel="noopener">Trenitalia website</a>.</p>
+  <p>The railway station is about a 15-minute walk from the venues. Alternatively, a taxi takes about 10 minutes (tel. <a href="tel:+39049651333">+39 049 651333</a>).</p>
+  <h3>By air</h3>
+  <p><a href="http://www.veniceairport.it/en/" target="_blank" rel="noopener">Venice Marco Polo Airport</a> (Tessera) is the nearest airport, about 30&nbsp;km from Padova. From there you can reach Padova:</p>
+  <ul class="steps">
+    <li>by bus, directly from the airport to Padova (<a href="https://www.fsbusitalia.it/eng/tourism/airport-connection-services/link-to-venice-airport.html" target="_blank" rel="noopener">Busitalia timetable</a>). The journey takes about one hour, depending on traffic. The last stop in Padova is next to the railway station;</li>
+    <li>by bus and train: take a local bus from the airport to Venezia Mestre railway station, then a train to Padova (about 40 minutes).</li>
+  </ul>
+  <p>Two other airports are within reach. <a href="https://www.aeroportoverona.it/en_gb" target="_blank" rel="noopener">Verona Valerio Catullo Airport</a> (Villafranca Veronese) and <a href="http://www.trevisoairport.it/en/" target="_blank" rel="noopener">Treviso Airport</a> are both connected by shuttle to their city&rsquo;s railway station, from where trains run to Padova.</p>
+  <p><strong>Airport shuttle from Venice.</strong> Two companies, <a href="https://www.airservicepadova.it/en/services/airport-shuttle/" target="_blank" rel="noopener">AirService</a> and <a href="https://www.landomas.it/blank-4" target="_blank" rel="noopener">Landomas</a>, offer the same door-to-door service from Marco Polo Airport. A driver meets you at arrivals with a sign and takes you by minivan to any address in Padova, such as your hotel, in about 40 minutes. It costs more than the bus and must be booked at least 24 hours in advance.</p>
+  <h3>Getting around Padova</h3>
+  <p>Buses and the tram are run by Busitalia Veneto. A 90-minute ticket costs &euro;1.70, enough to get from the railway station to the venue. A day ticket costs &euro;3.60 and gives unlimited travel until midnight on the day you first validate it.</p>
+  <p>Tickets are sold at ticket machines (for example at the railway station), in the Busitalia Veneto app, and at tobacconists and newsstands. You can also pay on board with a contactless card, and you&rsquo;ll never pay more than the day-ticket price however many trips you make. Remember to validate your ticket before boarding.</p>
+  <p>More information is on the <a href="https://www.fsbusitalia.it/eng/veneto.html" target="_blank" rel="noopener">Busitalia Veneto website</a>.</p>
+  <h3>By car</h3>
+  <ul class="steps">
+    <li>Motorway A4 Venice&ndash;Milan: take the Padova Est exit if you are coming from Venice, or Padova Ovest if you are coming from Milan.</li>
+    <li>Motorway A13 Bologna&ndash;Padova: take the Padova Sud exit.</li>
+  </ul>
+  <p class="warn">Please note that the historic centre of Padova is a limited traffic zone (ZTL), where cars need a special permit. Plan your route and parking accordingly. Details (in Italian) are on the <a href="https://www.comune.padova.it/zona-traffico-limitato-ztl-centro-storico" target="_blank" rel="noopener">City of Padova website</a>.</p>
+</section>
+
+<section id="page-organizers" hidden>
+  <h2>Organizers</h2>
+  <ul class="plain people">
+    <li>Giacomo Bighin <small>PMF, University of Zagreb</small></li>
+    <li>Luca Dell&rsquo;Anna <small>DFA, University of Padova</small></li>
+    <li>Giacomo Gradenigo <small>DFA, University of Padova</small></li>
+    <li>Andrea Perali <small>University of Camerino</small></li>
+    <li>Andrea Tononi <small>Polytechnic University of Catalonia and ICFO</small></li>
+  </ul>
+</section>
+
+<section id="page-sponsors" hidden>
+  <h2>Sponsorship</h2>
+  <p>We gratefully acknowledge the support of the University of Padova and of the Istituto Nazionale di Fisica Nucleare (INFN), which have made this workshop possible.</p>
+  <div class="logos">
+    <img src="images/unipd-logo.png" width="633" height="205" alt="Università di Padova">
+    <img src="images/infn-logo.png" width="530" height="267" alt="INFN, Istituto Nazionale di Fisica Nucleare">
+  </div>
+</section>
+
+</main>
+<footer><div class="wrap"><span><a class="js-contact" href="#organizers">Contact the organizers</a></span><span class="updated" hidden>Last updated <time id="updated"></time></span></div></footer>
+
+<script>
+/* ---------- Page switching ---------- */
+(function(){
+  var ids=["home","speakers","registration","programme","venue","organizers","sponsors"];
+  function show(){
+    var id=(location.hash||"#home").slice(1);
+    if(ids.indexOf(id)<0) id="home";
+    ids.forEach(function(s){ document.getElementById("page-"+s).hidden=(s!==id); });
+    document.querySelectorAll(".topnav a").forEach(function(a){
+      if(a.getAttribute("href")==="#"+id){
+        a.setAttribute("aria-current","page");
+        var ul=a.closest("ul"), li=a.parentNode;
+        if(ul.scrollWidth>ul.clientWidth) ul.scrollLeft=Math.max(0,li.offsetLeft-ul.offsetLeft-24);
+      } else a.removeAttribute("aria-current");
+    });
+    if(id==="venue"){ var f=document.querySelector(".map iframe"); if(f && !f.src) f.src=f.getAttribute("data-src"); }
+  }
+  function place(){
+    /* if we had scrolled down, go back to the page header */
+    var top=document.querySelector(".hero").getBoundingClientRect().top+window.scrollY;
+    if(window.scrollY>top) window.scrollTo(0,top);
+  }
+  /* handle menu clicks ourselves so the browser never jumps to the anchor */
+  document.querySelectorAll('a[href^="#"]').forEach(function(a){
+    var id=a.getAttribute("href").slice(1);
+    if(ids.indexOf(id)<0 || a.id==="ics") return;
+    a.addEventListener("click",function(e){
+      e.preventDefault();
+      if(location.hash!=="#"+id) history.pushState(null,"","#"+id);
+      show(); place();
+    });
+  });
+  window.addEventListener("popstate",show);
+  window.addEventListener("hashchange",show);
+  show();
+
+  /* Add to calendar (.ics) */
+  var ics=["BEGIN:VCALENDAR","VERSION:2.0","PRODID:-//Quantum Matter Across Scales//EN","BEGIN:VEVENT",
+    "UID:quantum-matter-across-scales-2027@unipd.it","DTSTAMP:20260929T000000Z",
+    "DTSTART;VALUE=DATE:20270524","DTEND;VALUE=DATE:20270527",
+    "SUMMARY:Quantum Matter Across Scales (workshop)",
+    "LOCATION:University of Padova\\, Padova\\, Italy",
+    "END:VEVENT","END:VCALENDAR"].join("\r\n");
+  document.getElementById("ics").href="data:text/calendar;charset=utf-8,"+encodeURIComponent(ics);
+
+  /* Last updated: taken automatically from the date the page file was last changed.
+     1) ask the server for the page's Last-Modified header;
+     2) otherwise use document.lastModified (ignored when it is just "now",
+        which is what browsers report when the server gives no date);
+     3) if no real date is available, the line stays hidden. */
+  var box=document.querySelector(".updated"), el=document.getElementById("updated");
+  function put(d){
+    if(!d || isNaN(d)) return false;
+    el.textContent=d.toLocaleDateString("en-GB",{day:"numeric",month:"long",year:"numeric"});
+    el.setAttribute("datetime",d.toISOString().slice(0,10));
+    box.hidden=false; return true;
+  }
+  function fromDocument(){
+    var d=new Date(document.lastModified);
+    if(!isNaN(d) && Math.abs(Date.now()-d.getTime())>120000) put(d);
+  }
+  if(window.fetch && /^https?:$/.test(location.protocol)){
+    fetch(location.pathname,{method:"HEAD",cache:"no-store"})
+      .then(function(r){ var h=r.headers.get("Last-Modified"); if(!(h && put(new Date(h)))) fromDocument(); })
+      .catch(fromDocument);
+  } else fromDocument();
+})();
+
+/* ---------- Contact link: the organizers' addresses are put together here,
+   only in the browser, so they never appear as plain text in the page
+   (this keeps away most spam bots that harvest e-mail addresses) ---------- */
+(function(){
+  var people=[["giacomo.gradenigo","unipd.it"],["gbighin","phy.hr"],["andrea.tononi","upc.edu"]];
+  var to=people.map(function(p){ return p[0]+"\u0040"+p[1]; }).join(",");
+  var href="mai"+"lto:"+to+"?subject="+encodeURIComponent("Quantum Matter Across Scales 2027");
+  document.querySelectorAll("a.js-contact").forEach(function(a){ a.href=href; });
+})();
+</script>
+</body>
+</html>

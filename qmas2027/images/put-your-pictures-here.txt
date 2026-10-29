@@ -1,0 +1,2 @@
+Put the sponsor logos (University of Padova, INFN) in this folder.
+The Home page photo is padova-prato-della-valle.jpg.
