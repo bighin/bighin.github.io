@@ -399,7 +399,7 @@ footer a{color:inherit}
   /* handle menu clicks ourselves so the browser never jumps to the anchor */
   document.querySelectorAll('a[href^="#"]').forEach(function(a){
     var id=a.getAttribute("href").slice(1);
-    if(ids.indexOf(id)<0 || a.id==="ics") return;
+    if(ids.indexOf(id)<0 || a.id==="ics" || a.classList.contains("js-contact")) return;
     a.addEventListener("click",function(e){
       e.preventDefault();
       if(location.hash!=="#"+id) history.pushState(null,"","#"+id);
