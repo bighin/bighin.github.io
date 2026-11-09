@@ -95,7 +95,7 @@ table.sched{width:100%;border-collapse:collapse}
 .sched thead th{font-size:.85rem;font-weight:600;text-align:left;color:#fff;background:linear-gradient(100deg,var(--g2),var(--g4));padding:.65rem 1.1rem}
 .sched tbody th,.sched td{padding:.8rem 1.1rem;border-top:1px solid var(--rule);vertical-align:top;text-align:left}
 .sched tbody tr:first-child th,.sched tbody tr:first-child td{border-top:0}
-.sched tbody th{width:8.5rem;font-weight:600;font-variant-numeric:tabular-nums;white-space:nowrap;border-right:1px solid var(--rule);color:var(--head)}
+.sched tbody th{width:6rem;font-weight:600;font-variant-numeric:tabular-nums;white-space:nowrap;border-right:1px solid var(--rule);color:var(--head)}
 .sched td{font-weight:500}
 .sched .what{display:block;color:var(--muted);font-weight:400}
 .sched tr.break th,.sched tr.break td{color:var(--muted);font-weight:400;background:var(--break)}
@@ -115,9 +115,6 @@ table.sched{width:100%;border-collapse:collapse}
 .contact{margin-top:1.75rem}
 .day-venue{margin:-.5rem 0 .9rem;color:var(--muted);font-size:.95rem;font-weight:500}
 .venues .v a.maplink{display:inline-block;margin-top:.3rem;font-size:.95rem}
-.prelim-intro{color:var(--muted);margin:0 0 1.5rem}
-.prelim{display:inline-block;margin-right:.5rem;padding:.12rem .6rem;border-radius:999px;background:var(--soft);color:var(--accent-ink);font-size:.8rem;font-weight:600;letter-spacing:.02em;text-transform:uppercase;vertical-align:.1em}
-.prelim-note{margin-top:1.5rem;color:var(--muted);font-style:italic}
 .day-venue .addr{display:block;font-weight:400;font-size:.9rem;opacity:.85}
 .boa+.boa{margin-top:-1rem}
 .boa{display:flex;align-items:center;gap:1rem;max-width:44rem;margin:0 0 1.75rem;padding:1rem 1.25rem;border:1px solid var(--rule);text-decoration:none;color:inherit;background:var(--surface);border-radius:10px;transition:border-color .15s,box-shadow .15s}
@@ -141,7 +138,7 @@ footer a{color:inherit}
   .topnav ul{gap:0 1.4rem;-webkit-mask-image:linear-gradient(90deg,#000 88%,transparent);mask-image:linear-gradient(90deg,#000 88%,transparent);padding-right:2rem}
   .hero .wrap{padding-top:2.25rem;padding-bottom:2rem}
   .rows li{grid-template-columns:1fr}
-  .sched tbody th{width:6.6rem;padding-right:.6rem;font-size:.9rem}
+  .sched tbody th{width:4.25rem;padding-right:.7rem}
   .sched tbody th,.sched td{padding-left:.8rem}
 }
 @media (prefers-reduced-motion:no-preference){
@@ -260,47 +257,45 @@ footer a{color:inherit}
     <span class="boa-text"><span class="boa-title">Flyer</span><span class="boa-meta">PDF</span></span>
     <span class="boa-arrow" aria-hidden="true">&rarr;</span>
   </a>
-  <p class="prelim-intro"><span class="prelim">Preliminary</span> Talk slots are 30 min: 20/25 min presentation + questions.</p>
   <h3 class="day"><span class="dn">24</span><span>May<span class="dw">&ensp;Monday</span></span></h3>
-  <p class="day-venue">Department of Physics and Astronomy &ldquo;Galileo Galilei&rdquo;<span class="addr">Aula Rostagni or Aula B, to be confirmed &middot; Via Marzolo 8, Padova</span></p>
+  <p class="day-venue">Department of Physics and Astronomy<span class="addr">Via Marzolo 8, Padova</span></p>
   <div class="tbl"><table class="sched">
     <thead><tr><th scope="col">Time</th><th scope="col">Session</th></tr></thead>
     <tbody>
-      <tr class="break"><th scope="row">09:00&ndash;09:30</th><td>Registration and welcome</td></tr>
-      <tr class="session"><th scope="row">09:30&ndash;09:45</th><td>Opening remarks</td></tr>
-      <tr class="talk"><th scope="row">09:45&ndash;10:15</th><td>Flavio Toigo<span class="what">Luca Salasnich&rsquo;s Contributions to the University of Padova (provisional title)</span></td></tr>
-      <tr class="talk"><th scope="row">10:15&ndash;10:45</th><td>Stefano Giorgini</td></tr>
-      <tr class="break"><th scope="row">10:45&ndash;11:15</th><td>Coffee break</td></tr>
-      <tr class="talk"><th scope="row">11:15&ndash;11:45</th><td>Francesco Minardi</td></tr>
-      <tr class="talk"><th scope="row">11:45&ndash;12:15</th><td>Anna Minguzzi</td></tr>
-      <tr class="break"><th scope="row">12:15&ndash;14:15</th><td>Lunch break</td></tr>
-      <tr class="talk"><th scope="row">14:15&ndash;14:45</th><td>Alberto Parola</td></tr>
-      <tr class="talk"><th scope="row">14:45&ndash;15:15</th><td>Francesco Ancilotto</td></tr>
-      <tr class="talk"><th scope="row">15:15&ndash;15:45</th><td>Boris Malomed<span class="what">Online</span></td></tr>
-      <tr class="break"><th scope="row">15:45&ndash;16:15</th><td>Coffee break</td></tr>
-      <tr class="talk"><th scope="row">16:15&ndash;16:45</th><td>Andrea Trombettoni</td></tr>
-      <tr class="talk"><th scope="row">16:45&ndash;17:15</th><td>Lorenzo Frigato</td></tr>
-      <tr class="session"><th scope="row">17:30&ndash;18:30</th><td>Welcome reception<span class="what">To be confirmed</span></td></tr>
+      <tr class="break"><th scope="row">09:00</th><td>Registration</td></tr>
+      <tr class="session"><th scope="row">09:50</th><td>Opening</td></tr>
+      <tr class="talk"><th scope="row">10:00</th><td>Invited talk</td></tr>
+      <tr class="talk"><th scope="row">10:30</th><td>Invited talk</td></tr>
+      <tr class="break"><th scope="row">11:00</th><td>Coffee break</td></tr>
+      <tr class="talk"><th scope="row">11:30</th><td>Invited talk</td></tr>
+      <tr class="talk"><th scope="row">12:00</th><td>Invited talk</td></tr>
+      <tr class="talk"><th scope="row">12:30</th><td>Invited talk</td></tr>
+      <tr class="break"><th scope="row">13:00</th><td>Lunch</td></tr>
+      <tr class="talk"><th scope="row">14:30</th><td>Invited talk</td></tr>
+      <tr class="talk"><th scope="row">15:00</th><td>Invited talk</td></tr>
+      <tr class="break"><th scope="row">15:30</th><td>Coffee break</td></tr>
+      <tr class="talk"><th scope="row">16:00</th><td>Invited talk</td></tr>
+      <tr class="talk"><th scope="row">16:30</th><td>Invited talk</td></tr>
     </tbody>
   </table></div>
   <h3 class="day"><span class="dn">25</span><span>May<span class="dw">&ensp;Tuesday</span></span></h3>
-  <p class="day-venue">Aula Magna, Department of Chemical Sciences<span class="addr">Via Marzolo 1, Padova</span></p>
+  <p class="day-venue">Aula A &ldquo;Nasini&rdquo;, Department of Chemical Sciences<span class="addr">Via Marzolo 1, Padova</span></p>
   <div class="tbl"><table class="sched">
     <thead><tr><th scope="col">Time</th><th scope="col">Session</th></tr></thead>
     <tbody>
-      <tr class="talk"><th scope="row">09:30&ndash;10:00</th><td>Luciano Reatto</td></tr>
-      <tr class="talk"><th scope="row">10:00&ndash;10:30</th><td>Pieralberto Marchetti</td></tr>
-      <tr class="break"><th scope="row">10:30&ndash;11:00</th><td>Coffee break</td></tr>
-      <tr class="talk"><th scope="row">11:00&ndash;11:30</th><td>Alessia Burchianti</td></tr>
-      <tr class="talk"><th scope="row">11:30&ndash;12:00</th><td>Fabio Cinti</td></tr>
-      <tr class="break"><th scope="row">12:00&ndash;14:00</th><td>Lunch break</td></tr>
-      <tr class="talk"><th scope="row">14:00&ndash;14:30</th><td>Jacques Tempere</td></tr>
-      <tr class="talk"><th scope="row">14:30&ndash;15:00</th><td>Nicola Manini</td></tr>
-      <tr class="talk"><th scope="row">15:00&ndash;15:30</th><td>Roberto Onofrio<span class="what">Online</span></td></tr>
-      <tr class="break"><th scope="row">15:30&ndash;16:00</th><td>Coffee break</td></tr>
-      <tr class="talk"><th scope="row">16:00&ndash;16:30</th><td>Alberto Ambrosetti</td></tr>
-      <tr class="talk"><th scope="row">16:30&ndash;17:00</th><td>Pierluigi Silvestrelli</td></tr>
-      <tr class="session"><th scope="row">20:00</th><td>Conference dinner<span class="what">To be confirmed</span></td></tr>
+      <tr class="talk"><th scope="row">09:30</th><td>Invited talk</td></tr>
+      <tr class="talk"><th scope="row">10:00</th><td>Invited talk</td></tr>
+      <tr class="talk"><th scope="row">10:30</th><td>Invited talk</td></tr>
+      <tr class="break"><th scope="row">11:00</th><td>Coffee break</td></tr>
+      <tr class="talk"><th scope="row">11:30</th><td>Invited talk</td></tr>
+      <tr class="talk"><th scope="row">12:00</th><td>Invited talk</td></tr>
+      <tr class="talk"><th scope="row">12:30</th><td>Invited talk</td></tr>
+      <tr class="break"><th scope="row">13:00</th><td>Lunch</td></tr>
+      <tr class="talk"><th scope="row">14:30</th><td>Invited talk</td></tr>
+      <tr class="talk"><th scope="row">15:00</th><td>Invited talk</td></tr>
+      <tr class="talk"><th scope="row">15:30</th><td>Invited talk</td></tr>
+      <tr class="break"><th scope="row">16:00</th><td>Coffee break (until 18:00)</td></tr>
+      <tr class="session"><th scope="row">20:30</th><td>Social dinner</td></tr>
     </tbody>
   </table></div>
   <h3 class="day"><span class="dn">26</span><span>May<span class="dw">&ensp;Wednesday</span></span></h3>
@@ -308,22 +303,21 @@ footer a{color:inherit}
   <div class="tbl"><table class="sched">
     <thead><tr><th scope="col">Time</th><th scope="col">Session</th></tr></thead>
     <tbody>
-      <tr class="talk"><th scope="row">09:30&ndash;10:00</th><td>Marko Robnik</td></tr>
-      <tr class="talk"><th scope="row">10:00&ndash;10:30</th><td>Maria Pelizzo</td></tr>
-      <tr class="break"><th scope="row">10:30&ndash;11:00</th><td>Coffee break</td></tr>
-      <tr class="talk"><th scope="row">11:00&ndash;11:30</th><td>Francesco Lorenzi</td></tr>
-      <tr class="talk"><th scope="row">11:30&ndash;12:00</th><td>Vittorio Penna</td></tr>
-      <tr class="break"><th scope="row">12:00&ndash;14:00</th><td>Lunch break</td></tr>
-      <tr class="talk"><th scope="row">14:00&ndash;14:30</th><td>Roberta Citro</td></tr>
-      <tr class="talk"><th scope="row">14:30&ndash;15:00</th><td>Andrea Bardin</td></tr>
-      <tr class="talk"><th scope="row">15:00&ndash;15:30</th><td>Sandro Wimberger</td></tr>
-      <tr class="break"><th scope="row">15:30&ndash;16:00</th><td>Coffee break</td></tr>
-      <tr class="talk"><th scope="row">16:00&ndash;16:30</th><td>Fabio Sattin</td></tr>
-      <tr class="talk"><th scope="row">16:30&ndash;17:00</th><td>Cesare Vianello</td></tr>
-      <tr class="session"><th scope="row">17:00&ndash;17:15</th><td>Closing remarks</td></tr>
+      <tr class="talk"><th scope="row">10:00</th><td>Invited talk</td></tr>
+      <tr class="talk"><th scope="row">10:30</th><td>Invited talk</td></tr>
+      <tr class="break"><th scope="row">11:00</th><td>Coffee break</td></tr>
+      <tr class="talk"><th scope="row">11:30</th><td>Invited talk</td></tr>
+      <tr class="talk"><th scope="row">12:00</th><td>Invited talk</td></tr>
+      <tr class="talk"><th scope="row">12:30</th><td>Invited talk</td></tr>
+      <tr class="break"><th scope="row">13:00</th><td>Lunch</td></tr>
+      <tr class="talk"><th scope="row">14:30</th><td>Invited talk</td></tr>
+      <tr class="talk"><th scope="row">15:00</th><td>Invited talk</td></tr>
+      <tr class="break"><th scope="row">15:30</th><td>Coffee break</td></tr>
+      <tr class="talk"><th scope="row">16:00</th><td>Invited talk</td></tr>
+      <tr class="talk"><th scope="row">16:30</th><td>Invited talk</td></tr>
+      <tr class="session"><th scope="row">17:00</th><td>Closing</td></tr>
     </tbody>
   </table></div>
-  <p class="prelim-note">Speaker order and online presentation times are subject to confirmation.</p>
 </section>
 
 <section id="page-venue" hidden>
@@ -331,7 +325,7 @@ footer a{color:inherit}
   <p class="lede">The workshop takes place in three different venues of the University of Padova, one for each day.</p>
   <ul class="rows venues">
     <li><span class="k">Monday 24 May</span><span class="v">Department of Physics and Astronomy &ldquo;Galileo Galilei&rdquo;<em>Aula Rostagni or Aula B (to be confirmed), Via Marzolo 8</em><a class="maplink" href="https://www.google.com/maps/search/?api=1&amp;query=Dipartimento+di+Fisica+e+Astronomia%2C+Via+Marzolo+8%2C+35131+Padova" target="_blank" rel="noopener">Open in Google Maps</a></span></li>
-    <li><span class="k">Tuesday 25 May</span><span class="v">Aula Magna, Department of Chemical Sciences<em>Via Marzolo 1, a short walk from the Department of Physics</em><a class="maplink" href="https://www.google.com/maps/search/?api=1&amp;query=Dipartimento+di+Scienze+Chimiche%2C+Via+Marzolo+1%2C+35131+Padova" target="_blank" rel="noopener">Open in Google Maps</a></span></li>
+    <li><span class="k">Tuesday 25 May</span><span class="v">Aula A &ldquo;Nasini&rdquo;, Department of Chemical Sciences<em>Via Marzolo 1, a short walk from the Department of Physics</em><a class="maplink" href="https://www.google.com/maps/search/?api=1&amp;query=Dipartimento+di+Scienze+Chimiche%2C+Via+Marzolo+1%2C+35131+Padova" target="_blank" rel="noopener">Open in Google Maps</a></span></li>
     <li><span class="k">Wednesday 26 May</span><span class="v">Archivio Antico, Palazzo del Bo<em>Via VIII Febbraio 2, in the historic centre</em><a class="maplink" href="https://www.google.com/maps/search/?api=1&amp;query=Palazzo+del+Bo%2C+Via+VIII+Febbraio+2%2C+35122+Padova" target="_blank" rel="noopener">Open in Google Maps</a></span></li>
   </ul>
   <h3>By train</h3>
